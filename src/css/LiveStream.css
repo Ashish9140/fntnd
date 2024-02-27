@@ -1,0 +1,85 @@
+.live-stream {
+    height: 90vh;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-gap: 10px; */
+}
+
+.live-stream .live-sec {
+    background-color: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.live-sec2{
+    background-color: green;
+    padding: 10px;
+}
+
+.live-stream .live-inner-sec {
+    background-color: blue;
+    flex: 1;
+}
+
+/* .lineSnap table,.areaSnap table {
+    max-height: 200px;
+    overflow: auto;
+} */
+
+.lineSnap h4,
+.areaSnap h4,
+.audio-player h4,
+.video-player h4 {
+    color: white;
+    padding: 10px;
+}
+
+.video-player,
+.audio-player {
+    color: white;
+}
+
+.video-card-header,
+.audio-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.video-card,
+.audio-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.video-player video {
+    width: 100px;
+    height: 100px;
+}
+
+.audio-player audio {
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.card2 {
+    max-height: 300px;
+    overflow: auto;
+    margin: 0px 10px 10px 10px;
+    border: 2px solid red;
+    background-color: #EAEAEA;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.lineSnap>div,
+.areaSnap>div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
