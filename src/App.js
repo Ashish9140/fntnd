@@ -115,6 +115,7 @@ const App = () => {
   }
 
   const handleMapLine = (latitude, longitude) => {
+    console.log(latitude,longitude);
     let prevLat = '';
     let prevLng = '';
     const newCoordinates = latitude.map((lat, index) => {

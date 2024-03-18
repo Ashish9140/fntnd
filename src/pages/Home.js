@@ -66,8 +66,8 @@ const Home = () => {
                     lat = pos.coords.latitude;
                     long = pos.coords.longitude;
 
-                    let latitude = ['', lat.toString()];
-                    let longitude = ['', long.toString()];
+                    let latitude = [lat.toString()];
+                    let longitude = [long.toString()];
 
                     fetch(`${baseURL}/take-snap`, {
                         method: 'POST',

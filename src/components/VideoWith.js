@@ -130,8 +130,6 @@ const VideoWith = () => {
                     }
 
 
-
-
                     const formData = new FormData();
                     formData.append("videowith", blob);
                     formData.append("filename", fileName);
@@ -139,15 +137,10 @@ const VideoWith = () => {
                     formData.append("time", time);
 
                     // appending location into form data
-                    if (latitude.length === 1) {
-                        formData.append('latitude', '');
-                    }
+
                     latitude.forEach((latitude, index) => {
                         formData.append('latitude', latitude);
                     });
-                    if (latitude.length === 1) {
-                        formData.append("longitude", '');
-                    }
                     longitude.forEach((longitude, index) => {
                         formData.append("longitude", longitude);
                     });

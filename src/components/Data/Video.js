@@ -81,7 +81,7 @@ const Video = () => {
                                                                 element.latitude.map((item, index) => {
                                                                     if (item !== '')
                                                                         return (
-                                                                            <tbody>
+                                                                            <tbody key={index}>
                                                                                 <tr>
                                                                                     <td>{item}</td>
                                                                                     <td className="iconp">

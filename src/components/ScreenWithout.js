@@ -125,7 +125,6 @@ const ScreenWithout = () => {
                     latitude[i] = latitude[i].toString();
                 }
                 for (let i = 0; i < longitude.length; i++) {
-                    // console.log(latitude[i]);
                     longitude[i] = longitude[i].toString();
                 }
 
@@ -135,17 +134,9 @@ const ScreenWithout = () => {
                 formData.append("date", date);
                 formData.append("time", time);
 
-                if (latitude.length === 1) {
-                    formData.append('latitude', '');
-                }
                 latitude.forEach((latitude, index) => {
                     formData.append('latitude', latitude);
                 });
-
-
-                if (latitude.length === 1) {
-                    formData.append("longitude", '');
-                }
                 longitude.forEach((longitude, index) => {
                     formData.append("longitude", longitude);
                 });

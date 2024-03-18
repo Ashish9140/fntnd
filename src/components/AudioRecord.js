@@ -155,7 +155,6 @@ const AudioRecord = () => {
                     recordAudio.style.display = "none";
                     audioBtn.style.display = 'inline-block';
                     let blob = new Blob(_recordedChunks, { type: 'audio/mp3' });
-                    // let url = window.URL.createObjectURL(blob);
                     let fileName = prompt("Enter file name", "my-audio");
 
                     let date = formatDate();
@@ -167,7 +166,6 @@ const AudioRecord = () => {
                         latitude[i] = latitude[i].toString();
                     }
                     for (let i = 0; i < longitude.length; i++) {
-                        // console.log(latitude[i]);
                         longitude[i] = longitude[i].toString();
                     }
 
@@ -177,17 +175,10 @@ const AudioRecord = () => {
                     formData.append("date", date);
                     formData.append("time", time);
 
-                    if (latitude.length === 1) {
-                        formData.append('latitude', '');
-                    }
+
                     latitude.forEach((latitude, index) => {
                         formData.append('latitude', latitude);
                     });
-
-
-                    if (latitude.length === 1) {
-                        formData.append("longitude", '');
-                    }
                     longitude.forEach((longitude, index) => {
                         formData.append("longitude", longitude);
                     });

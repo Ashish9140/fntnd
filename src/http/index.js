@@ -18,5 +18,6 @@ export const updateAvatar = (data) => api.post('/updateavatar', data);
 export const getUsers = (data) => api.post('/getalias', data);
 export const getProfile = (data) => api.post('/profile', data);
 export const aliasData = (data) => api.post('/aliasdata2', data);
+export const getCodes = (data) => api.post('/getcodes', data);
 
 export default api;
